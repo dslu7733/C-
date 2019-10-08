@@ -1,5 +1,5 @@
 sources := main.cpp stack.cpp
-objs    := $(sources:.c=.o)
+objs    := $(sources:.cpp=.o)
 exec    := main
 
 CC:=g++
