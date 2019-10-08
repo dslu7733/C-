@@ -1,0 +1,18 @@
+sources := main.c stack.c
+objs    := $(sources:.c=.o)
+exec    := main
+
+CC:=gcc
+CFLAGS:='-std=c99'
+
+start : $(objs)
+	echo $(sources)
+	echo $(objs)
+	$(CC) -o $(exec) $(objs)
+
+.c.o:
+	$(CC) -g -o $@ -c $<
+
+clean:
+	rm -rf $(exec) $(objs)
+
