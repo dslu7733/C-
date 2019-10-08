@@ -1,4 +1,4 @@
-sources := main.c stack.c
+sources := main.cpp stack.cpp
 objs    := $(sources:.c=.o)
 exec    := main
 
